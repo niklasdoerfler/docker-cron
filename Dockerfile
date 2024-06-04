@@ -5,7 +5,8 @@ RUN apk add --no-cache \
     sshpass \
     bash \
     rsync \
-    tar
+    tar \
+    gpg
 
 COPY docker-entrypoint.sh /usr/bin/docker-entrypoint.sh
 RUN chmod +x /usr/bin/docker-entrypoint.sh
